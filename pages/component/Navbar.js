@@ -11,6 +11,7 @@ import LanguageModal from './LanguageModal';
 import CrediCartModal from './CrediCartModal';
 import OutlineModal from './OutlineModal';
 import AvatarModal from './AvatarModal';
+import { usePathname} from 'next/navigation';
 
 function Navbar() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -18,6 +19,7 @@ function Navbar() {
   const [isCrediCardOpen, setIsCrediCardOpen] = useState(false);
   const [isOutline, setIsOutline] = useState(false);
   const [isAvatarOpen, setIsAvatarOpen] = useState(false);
+    const pathname = usePathname();
 
   return (
     <div className='w-full z-50 relative h-[128px] bg-[radial-gradient(circle_at_center,_#2F3644_0%,_#1A202E_60%,_#000000_100%)] border-[#23262F] shadow-md shadow-[#141416]'>
@@ -27,11 +29,11 @@ function Navbar() {
           <Image src="/logo.svg" alt='logo' width={51} height={28} />
           <h1 className='text-[#1A80E6] font-bold tracking-normal sm:text-[24px] text-[14px]'>FalconX</h1>
           <ul className='text-white sm:flex hidden items-center gap-9 ml-3 text-[18px] font-sans'>
-            <li><Link href="/markets">Markets</Link></li>
-            <li><Link href="/spot">Spot</Link></li>
-            <li><Link className='text-[#4899EB]' href="/support">Support</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
-          </ul>
+            <li><Link href="/markets"   className={pathname === "/markets" ? "bg-[#1A80E6] text-white px-3 py-1 rounded" : "text-white px-3 py-1 rounded"}>Markets</Link></li>
+            <li><Link href="/spot" className={pathname === "/spot" ? "bg-[#1A80E6] text-white px-3 py-1 rounded" : "text-white px-3 py-1 rounded"}>Spot</Link></li>
+            <li><Link className={pathname === "/support" ? "bg-[#1A80E6] text-white px-3 py-1 rounded" : "text-white px-3 py-1 rounded"} href="/support">Support</Link></li>
+            <li><Link href="/blog" className={pathname === "/blog" ? "bg-[#1A80E6] text-white px-3 py-1 rounded" : "text-white px-3 py-1 rounded"}>Blog</Link></li>
+          </ul> 
         </div>
 
         <div className='sm:flex hidden items-center gap-4 '>
