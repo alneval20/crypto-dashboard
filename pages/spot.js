@@ -13,10 +13,12 @@ import { CiSettings } from "react-icons/ci";
 import OrderBook from './MArket/OrderBook';
 import { useState } from 'react';
 import AsserPairModal from './AsserPairModal';
+import Plus from './Plus';
 
 
 function Spot() {
  const [showModal, setShowModal] = useState(false);
+ const [plus, setPlus] = useState(false);
   return (
     <div className='w-full h-screen flex flex-col overflow-auto bg-[radial-gradient(circle_at_center,_#2F3644_0%,_#1A202E_60%,_#000000_100%)]'>
   {/*Left*/}
@@ -56,7 +58,10 @@ function Spot() {
       <FaRegNewspaper className='text-[#FCFCFD] text-[17px] sm:text-[19px] ml-2 sm:ml-3'/>
       <span className='text-[#FCFCFD] text-[13px] sm:text-[14px] tracking-normal'>News</span>
       <div className='hidden sm:block w-[0px] h-[24px] border-1 border-[#353945] ml-3 sm:ml-5'></div>
-      <BiSolidBellPlus className='text-[#FCFCFD] text-[17px] sm:text-[19px] ml-3 sm:ml-5'/>
+      <div onClick={() => setPlus(true)}>
+        <BiSolidBellPlus  className='text-[#FCFCFD] text-[17px] sm:text-[19px] ml-3 sm:ml-5'/>
+      </div>
+      <Plus plus={plus} onClose={() => setPlus(false)} />
       <RiLayout3Line className='text-[#FCFCFD] text-[17px] sm:text-[19px] ml-2'/>
       <CiSettings className='text-[#FCFCFD] text-[17px] sm:text-[19px] ml-2'/>
     </div>

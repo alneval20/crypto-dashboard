@@ -17,7 +17,7 @@ function AsserPairModal({showmodal, onClose }) {
         {id: 6, name: "LTC/USDT", symbol: "Litecoin", price: "$70.90", change: "+9.88%", favorite: true, icon: "/ltc.svg"}
     ]
   return (
-    <div className='fixed inset-0 flex  items-center justify-center z-50'>
+    <div className='fixed inset-0 flex  items-center justify-center z-50 backdrop-blur-sm bg-black/30'>
         <div className='w-[566px] h-[787px] flex flex-col  bg-[#18191D] border-1 border-[#23262F] shadow-[#141416CF] rounded-[16px]'>
             <div className='flex items-center justify-between px-10 mt-10   '>
                 <span className='text-[#FCFCFD] text-[16px] font-medium'>Select Crypto Pair</span>
@@ -26,7 +26,7 @@ function AsserPairModal({showmodal, onClose }) {
             <div className='w-[502px] border-[1px] border-[#353945] ml-6 mt-5'></div>
             <div className='w-[502px] h-[46px] border-[1px] bg-[#23262F] flex items-center justify-center ml-5 mt-5 rounded-[8px]'>
                 <CiSearch className='text-[#777E90] text-[25px] ml-5'/>
-                <input type='text' placeholder='Search crypto' className='w-[502px] h-[46px] text-[#777E90] text-[14px] indent-1 '/>
+                <input type='text' placeholder='Search crypto' className='w-[502px] h-[46px] text-[#777E90] text-[14px] indent-1 outline-none'/>
             </div>
 
             <div className='flex flex-col items-start px-6 mt-7'>
