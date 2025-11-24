@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react'
 import { FaAngleRight } from "react-icons/fa";
-import { GridCard } from '../pages/MArket/GridCart'
+import { GridCard } from './Market/GridCart'
 import { IoIosTrendingUp } from "react-icons/io";
-import MarketSection from './MArket/MarketSection';
-import MarketTable from './MArket/MarketTable';
+import MarketSection from './Market/MarketSection';
+import MarketTable from './Market/MarketTable';
 
 
 

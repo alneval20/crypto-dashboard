@@ -10,7 +10,7 @@ import { FaRegNewspaper } from "react-icons/fa";
 import { BiSolidBellPlus } from "react-icons/bi";
 import { RiLayout3Line } from "react-icons/ri";
 import { CiSettings } from "react-icons/ci";
-import OrderBook from './MArket/OrderBook';
+import OrderBook from './Market/OrderBook';
 import { useState } from 'react';
 import AsserPairModal from './AsserPairModal';
 import Plus from './Plus';

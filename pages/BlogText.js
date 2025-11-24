@@ -1,0 +1,6 @@
+
+
+export const blogText = [
+    "Pulse is designed to help traders streamline their trading activities alongside social engagement. In the current trading environment, traders often switch between social platforms for community insights and trading platforms to execute transactions, which can result in a fragmented experience.",
+    "Pulse aims to address this by <span class= 'text-blue-500 underline'>integrating trading and social interactions</span> into a single, decentralized platform. This integration allows traders to translate discussions and shared knowledge more easily into trading actions and potential rewards. By bringing together essential information and community engagement in one place, Pulse seeks to simplify the process and reduce the need for extensive research across multiple platforms. With 65% of tokens allocated as rewards for early contributors, users are incentivized to actively participate in the platform, ensuring that value is distributed fairly among the most engaged members."
+]
